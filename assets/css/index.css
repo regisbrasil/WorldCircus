@@ -1,47 +1,62 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: Crimson text;
+@font-face {
+  /* Use exatamente o nome interno da família, entre aspas */
+  font-family: KyivTypeSerif-Regular2;
+  src: url("../fonts/Kyiv/KyivTypeSerif-Regular2.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.teste {
+  font-family: "KyivTypeSerif-Regular2", serif;
 }
 
-:root{
-    --color-primary-dark: #311d39;
-    --color-primary: #67434f;
-    --color-primary-light: #9D8e7e;
-    --color-accent: #c3cca1;
-    --color-highlight: #e56a61;
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: Crimson text; */
+}
 
-    /* --color-bg-dark: #212529;
+:root {
+  --color-primary-dark: #311d39;
+  --color-primary: #67434f;
+  --color-primary-light: #9d8e7e;
+  --color-accent: #c3cca1;
+  --color-highlight: #e56a61;
+
+  /* --color-bg-dark: #212529;
     --color-bg-mid: #495057;
     --color-bg-neutral: # ;
     --color-bg: ; */
 
-    /* --font-main: */
+  /* --font-main: */
 }
 
-@media(max-width:430px) {
-    .container{
+@media (max-width: 430px) {
+  .container {
     display: grid;
-    grid-template-areas: 
-    'header'
-    'navbar';
-    }
+    grid-template-areas:
+      "header"
+      "navbar";
+  }
 
-    .header{
+  .header {
     grid-area: header;
-    display: grid;
-    grid-template-columns: auto;
-    background-image: url(../img/background-image-screen-mobile.svg);  
-    background-size: cover; 
+    background-image: url(../img/background-image-screen-mobile.svg);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 340px;
-    }
-    .header h1{
-        font-family: Kyiv*Type Serif;
-        color: var(--color-primary-dark);
-    }
-    .header p{
-        color: white;
-    }
+  }
+  .header h1 {
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    font-size: 36px;
+    font-weight: lighter;
+    font-family: "KyivTypeSerif-Regular2", serif;
+    color: var(--color-primary-dark);
+  }
+  .header p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+  }
 }
-
