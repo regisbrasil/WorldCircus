@@ -1,18 +1,24 @@
 @font-face {
-  /* Use exatamente o nome interno da família, entre aspas */
   font-family: KyivTypeSerif-Regular2;
   src: url("../fonts/Kyiv/KyivTypeSerif-Regular2.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-.teste {
+
+@font-face {
+  font-family: CrimsonText-Regular;
+  src: url("../fonts/Crimson-text/CrimsonText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.name-wc {
   font-family: "KyivTypeSerif-Regular2", serif;
 }
 
 * {
   padding: 0;
   margin: 0;
-  /* font-family: Crimson text; */
+  font-family: "CrimsonText-Regular", serif;
 }
 
 :root {
@@ -55,8 +61,15 @@
     color: var(--color-primary-dark);
   }
   .header p {
+    position: absolute;
+    top: 260px;
     color: white;
     text-align: center;
     font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
+}
+
+@media (max-width: 430px) {
 }
