@@ -9,25 +9,97 @@
   <body>
     <div class="container">
       <header class="header">
-        <h1 class="name-wc">WorldCircus</h1>
-        <p>
-          “O circo é o único lugar do mundo onde sonhar ainda é permitido.” —
-          Federico Fellini, cineasta italiano apaixonado pelo circo.
-        </p>
+        <nav class="desktop-menu">
+          <a href="./index.html">Home</a>
+          <a href="#galery-page">Galeria</a>
+          <a href="./themes/artists.html">Artistas</a>
+          <a href="#circos-page">Circos</a>
+          <a href="#about-page">Sobre</a>
+        </nav>
+        <div class="header-align">
+          <h1 class="name-wc">WorldCircus</h1>
+          <p>
+            “O circo é o único lugar do mundo onde sonhar ainda é permitido.” —
+            Federico Fellini, cineasta italiano apaixonado pelo circo.
+          </p>
+        </div>
       </header>
+      <div class="nav-menu-mobile">
+        <h4>WorldCircus</h4>
+        <button class="menu-toggle" id="menu-toggle">
+          <span>Menu</span>
+          <svg
+            width="14"
+            height="12"
+            viewBox="0 0 14 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 6H13"
+              stroke="#311D39"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1 1.19995H13"
+              stroke="#311D39"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M5.80005 10.7999L13 10.7999"
+              stroke="#311D39"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#galery-page">Galeria</a></li>
+          <li><a href="./themes/artists.html">Artistas</a></li>
+          <li><a href="#circos-page">Circos</a></li>
+          <li><a href="#about-page">Sobre</a></li>
+        </ul>
+        <button class="close-menu" id="close-menu">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#311D39"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </nav>
       <main>
         <section class="about-section">
           <h3>Palco aberto para artistas do impossível</h3>
-          <div class="box-about">
-            <p>
-              O WorldCircus é uma plataforma dedicada a divulgar e valorizar
-              artistas circenses e independentes. Aqui você encontra circos
-              locais, artistas talentosos e suas atrações únicas — tudo em um só
-              lugar.
-            </p>
+          <div class="box-about-align">
+            <div class="box-about">
+              <p>
+                O WorldCircus é uma plataforma dedicada a divulgar e valorizar
+                artistas circenses e independentes. Aqui você encontra circos
+                locais, artistas talentosos e suas atrações únicas — tudo em um
+                só lugar.
+              </p>
+            </div>
           </div>
-          <div class="btn-position-r">
-            <a class="btn-dark" href="#">
+          <div class="btn-position-r btn-position-0">
+            <a class="btn-dark" href="#about-page">
               Saiba mais sobre nós
               <svg
                 width="25"
@@ -114,8 +186,8 @@
           <h3>Conheça circos próximos de você</h3>
           <div class="cards-circus">
             <div class="card">
-              <a href="#">
-              <img src="./assets/img/circus/sesc-circo.png" alt="" />
+              <a href="#circo-sesc">
+                <img src="./assets/img/circus/sesc-circo.png" alt="" />
               </a>
               <aside>
                 <h4>Sesc Circo</h4>
@@ -141,7 +213,9 @@
               </aside>
             </div>
             <div class="card">
-              <img src="./assets/img/circus/circo-mirage.jpg" alt="" />
+              <a href="#circo-mirage">
+                <img src="./assets/img/circus/circo-mirage.jpg" alt="" />
+              </a>
               <aside>
                 <h4>Mirage Circus</h4>
                 <span>
@@ -166,7 +240,9 @@
               </aside>
             </div>
             <div class="card">
-              <img src="./assets/img/circus/circo-fantasy.jpg" alt="" />
+              <a href="#circo-fantasy">
+                <img src="./assets/img/circus/circo-fantasy.jpg" alt="" />
+              </a>
               <aside>
                 <h4>Circo Fantasy</h4>
                 <span>
@@ -191,7 +267,7 @@
               </aside>
             </div>
           </div>
-          <a class="btn-dark" href="#">
+          <a class="btn-dark" href="#circus-page">
             Explorar mais circos
             <svg
               width="25"
@@ -230,10 +306,10 @@
       <footer>
         <h2>WorldCircus</h2>
         <div class="links">
-          <a href="#">Home</a>
-          <a href="#">Serviços</a>
-          <a href="#">Sobre</a>
-          <a href="#">FAQ</a>
+          <a href="./index.html">Home</a>
+          <a href="#services-page">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#faq">FAQ</a>
         </div>
         <div class="social">
           <a href="#email">
@@ -338,10 +414,9 @@
             </svg>
           </a>
         </div>
-        <span>
-          © 2025 WorldCircus. Todos os direitos reservados.
-        </span>
+        <span> © 2025 WorldCircus. Todos os direitos reservados. </span>
       </footer>
     </div>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
