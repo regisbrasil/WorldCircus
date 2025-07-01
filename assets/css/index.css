@@ -224,10 +224,14 @@ main {
   font-size: 16px;
 }
 .about-section,
-.artists-section .btn-position-r {
+.artists-section-mobile .btn-position-r {
   text-align: right;
 }
-.artists-section {
+.artists-section{
+  display: none;
+}
+
+.artists-section-mobile {
   background-image: url(../img/background-artists-section.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,7 +239,7 @@ main {
   padding: 10px 20px;
   margin-top: 20px;
 }
-.artists-section h3 {
+.artists-section-mobile h3 {
   color: var(--color-primary-light);
   font-weight: 300;
   text-align: center;
@@ -243,7 +247,7 @@ main {
   letter-spacing: -1px;
 }
 
-.artists-section p {
+.artists-section-mobile p {
   color: var(--color-white);
   text-align: justify;
   margin: 170px 10px 5px 10px;
@@ -344,7 +348,7 @@ footer span {
   padding: 15px;
 }
 
-@media (min-width: 431px) and (max-width: 768px) {
+@media (min-width: 431px) and (max-width: 768px){
   .container {
     display: grid;
     grid-template-areas:
@@ -417,4 +421,51 @@ footer span {
   .about-section .btn-position-0 {
     text-align: center;
   }
+  .artists-section-mobile {
+    background-position: 0;
 }
+.artists-section-mobile h3 {
+  color: var(--color-primary-light);
+  font-weight: 300;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: -1px;
+  margin-top: 20px;
+}
+
+.artists-section-mobile p {
+  color: var(--color-white);
+  text-align: start;
+  margin: 170px 10px 10px 10px;
+}
+}
+
+/* 
+ .artists-section-mobile {
+    display: none;
+  }
+
+  .artists-section {
+    display: flex;
+    background-color: var(--color-black);
+    justify-content: space-between;
+  }
+
+  .artists-section h3 {
+  color: var(--color-primary-light);
+  font-weight: 300;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: -1px;
+}
+
+.artists-section p {
+  color: var(--color-white);
+  text-align: justify;
+  margin: 170px 10px 5px 10px;
+}
+.artists-section img{
+  width: 100%;
+  min-width: 398px;
+  max-width: 500px;
+} */
