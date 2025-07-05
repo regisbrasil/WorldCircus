@@ -227,7 +227,7 @@ main {
 .artists-section-mobile .btn-position-r {
   text-align: right;
 }
-.artists-section{
+.artists-section {
   display: none;
 }
 
@@ -348,7 +348,7 @@ footer span {
   padding: 15px;
 }
 
-@media (min-width: 431px) and (max-width: 768px){
+@media (min-width: 431px) and (max-width: 768px) {
   .container {
     display: grid;
     grid-template-areas:
@@ -423,21 +423,124 @@ footer span {
   }
   .artists-section-mobile {
     background-position: 0;
-}
-.artists-section-mobile h3 {
-  color: var(--color-primary-light);
-  font-weight: 300;
-  text-align: center;
-  font-size: 24px;
-  letter-spacing: -1px;
-  margin-top: 20px;
-}
+  }
+  .artists-section-mobile h3 {
+    color: var(--color-primary-light);
+    font-weight: 300;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: -1px;
+    margin-top: 20px;
+  }
 
-.artists-section-mobile p {
-  color: var(--color-white);
-  text-align: start;
-  margin: 170px 10px 10px 10px;
+  .artists-section-mobile p {
+    color: var(--color-white);
+    text-align: start;
+    margin: 170px 10px 10px 10px;
+  }
+
+  .circus-section {
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .circus-section h3 {
+    color: var(--color-primary);
+    font-weight: 300;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+  .circus-section .cards-circus {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .circus-section .cards-circus .card {
+    display: grid;
+    background-color: var(--color-black);
+    justify-content: center;
+    padding: 20px 5px;
+    border-radius: 10px;
+  }
+  .circus-section .cards-circus .card img {
+    border-radius: 5px;
+  }
+  .circus-section .cards-circus aside {
+    display: grid;
+    text-align: center;
+    gap: 15px;
+  }
+  .circus-section .cards-circus .card h4 {
+    font-family: "KyivTypeSerif-Regular2", serif;
+    color: var(--color-primary);
+    margin-top: 5px;
+  }
+  .circus-section .cards-circus .card span {
+    color: var(--color-primary-light);
+    display: flex;
+    align-items: center;
+  }
+  .circus-section .cards-circus .card span svg {
+    padding-right: 10px;
+  }
 }
+@media (min-width: 769px) {
+  .header {
+    grid-area: header;
+    background-image: none;
+    background-image: url(../img/background-image-screen-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 960px;
+    overflow-y: auto;
+    text-align: right;
+    padding-right: 40px;
+  }
+  .header-align {
+    display: grid;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  .header h1 {
+    position: static;
+    font-size: 128px;
+    font-weight: lighter;
+    margin-top: 50px;
+  }
+  .header p {
+    position: static;
+    color: white;
+    text-align: end;
+    font-size: 16px;
+    width: 450px;
+    padding: 0;
+  }
+  .nav-menu-mobile,
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 16px;
+  }
+  .desktop-menu a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: all 0.3s ease;
+  }
+  .desktop-menu a:hover {
+    color: var(--color-primary);
+  }
 }
 
 /* 
