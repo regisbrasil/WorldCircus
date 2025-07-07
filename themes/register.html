@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - WorldCircus</title>
+    <link rel="stylesheet" href="../assets/css/login-register.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-form">
+        <h1>WorldCircus</h1>
+        <form action="/register" method="post">
+          <h2>Login</h2>
+          <input
+            type="text"
+            name="name"
+            placeholder="Nome e Sobrenome "
+            required
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Nome de usuário ou E-mail "
+            required
+          />
+          <input type="password" name="password" placeholder="Senha" required />
+          <div class="btn-form">
+            <a class="btn-light" href="./login.html"> Cadastrar </a>
+          
+          </div>
+        </form>
+      </div>
+      <div class="login-image"></div>
+    </div>
+  </body>
+</html>

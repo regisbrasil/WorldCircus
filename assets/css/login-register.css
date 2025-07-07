@@ -1,0 +1,144 @@
+@font-face {
+  font-family: KyivTypeSerif-Regular2;
+  src: url("../fonts/Kyiv/KyivTypeSerif-Regular2.otf") format("truetype");
+}
+@font-face {
+  font-family: DmSans-bold;
+  src: url("../fonts/Dm-sans/DMSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: CrimsonText-Regular;
+  src: url("../fonts/Crimson-text/CrimsonText-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "CrimsonText-Regular", serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-image {
+  flex: 6;
+  background-image: url("../img/background-login.svg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+.login-form {
+  flex: 4;
+  background: #9d8e7e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  justify-content: flex-start;
+}
+
+.login-form h1 {
+  font-size: 48px;
+  color: #311d39;
+  font-family: "KyivTypeSerif-Regular2", serif;
+  margin-bottom: 100px;
+}
+
+.login-form form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.login-form h2 {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  font-family: "DmSans-bold", serif;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.login-form input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.btn-form {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.btn-light {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border: 3px solid white;
+  border-radius: 40px;
+  background-color: transparent;
+  color: white;
+  font-family: DmSans-bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 48%;
+}
+
+.btn-light:hover {
+  background-color: #67434f;
+  border-color: #67434f;
+}
+
+.forgot {
+  text-align: right;
+  display: block;
+  margin-top: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "DmSans-bold", sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-form {
+    flex: 1;
+    height: 100vh;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .login-form h1 {
+    margin-bottom: 30px;
+  }
+}

@@ -120,6 +120,9 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+/* header .btn-light{
+  display: none;
+} */
 .desktop-menu {
   display: none;
 }
@@ -224,7 +227,7 @@ main {
   font-size: 16px;
 }
 .about-section,
-.artists-section-mobile .btn-position-r {
+.artists-section-mobile .btn-position {
   text-align: right;
 }
 .artists-section {
@@ -282,6 +285,7 @@ main {
 }
 .circus-section .cards-circus .card img {
   border-radius: 5px;
+  height: 105px;
 }
 .circus-section .cards-circus aside {
   display: grid;
@@ -348,7 +352,7 @@ footer span {
   padding: 15px;
 }
 
-@media (min-width: 431px) and (max-width: 768px) {
+@media (min-width: 431px) and (max-width: 1000px) {
   .container {
     display: grid;
     grid-template-areas:
@@ -373,7 +377,7 @@ footer span {
   }
   .header h1 {
     position: static;
-    font-size: 48px;
+    font-size: 56px;
     font-weight: lighter;
     margin-top: 50px;
   }
@@ -381,10 +385,13 @@ footer span {
     position: static;
     color: white;
     text-align: end;
-    font-size: 16px;
+    font-size: 18px;
     width: 450px;
     padding: 0;
   }
+  /* .header .btn-light{
+    display: block;
+  } */
   .nav-menu-mobile,
   .mobile-menu {
     display: none;
@@ -418,6 +425,12 @@ footer span {
     padding: 15px 10px;
     margin-bottom: 20px;
   }
+  .about-section .box-about p {
+    font-size: 18px;
+  }
+  .about-section h3 {
+    font-size: 28px;
+  }
   .about-section .btn-position-0 {
     text-align: center;
   }
@@ -428,7 +441,7 @@ footer span {
     color: var(--color-primary-light);
     font-weight: 300;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: -1px;
     margin-top: 20px;
   }
@@ -437,6 +450,7 @@ footer span {
     color: var(--color-white);
     text-align: start;
     margin: 170px 10px 10px 10px;
+    font-size: 16px;
   }
 
   .circus-section {
@@ -448,12 +462,13 @@ footer span {
     color: var(--color-primary);
     font-weight: 300;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: -1px;
   }
   .circus-section .cards-circus {
     display: grid;
-    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-template-columns: 350px 350px;
     gap: 15px;
     padding: 5px;
     margin-top: 20px;
@@ -461,14 +476,15 @@ footer span {
   }
 
   .circus-section .cards-circus .card {
-    display: grid;
+    display: flex;
+    justify-content: space-around;
     background-color: var(--color-black);
-    justify-content: center;
     padding: 20px 5px;
     border-radius: 10px;
   }
   .circus-section .cards-circus .card img {
     border-radius: 5px;
+    height: 150px;
   }
   .circus-section .cards-circus aside {
     display: grid;
@@ -479,24 +495,26 @@ footer span {
     font-family: "KyivTypeSerif-Regular2", serif;
     color: var(--color-primary);
     margin-top: 5px;
+    font-size: 20px;
   }
   .circus-section .cards-circus .card span {
     color: var(--color-primary-light);
     display: flex;
     align-items: center;
+    font-size: 16px;
   }
   .circus-section .cards-circus .card span svg {
     padding-right: 10px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1000px) {
   .header {
     grid-area: header;
     background-image: none;
     background-image: url(../img/background-image-screen-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 960px;
+    height: 100vh;
     overflow-y: auto;
     text-align: right;
     padding-right: 40px;
@@ -508,17 +526,25 @@ footer span {
   }
   .header h1 {
     position: static;
-    font-size: 128px;
+    font-size: 120px;
     font-weight: lighter;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-right: 30px;
   }
   .header p {
     position: static;
     color: white;
     text-align: end;
-    font-size: 16px;
-    width: 450px;
+    font-size: 22px;
+    width: 60vw;
+    min-width: 80vw;
     padding: 0;
+    margin-right: 35px;
+    margin-bottom: 100px;
+  }
+  header .btn-light{
+    font-weight: 500;
+    margin-right: 30px;
   }
   .nav-menu-mobile,
   .mobile-menu {
@@ -529,9 +555,9 @@ footer span {
     display: flex;
     justify-content: flex-end;
     gap: 30px;
-    padding-right: 20px;
-    padding-top: 20px;
-    font-size: 16px;
+    padding-right: 80px;
+    padding-top: 40px;
+    font-size: 24px;
   }
   .desktop-menu a {
     text-decoration: none;
@@ -540,6 +566,142 @@ footer span {
   }
   .desktop-menu a:hover {
     color: var(--color-primary);
+  }
+  .about-section {
+    padding: 10px;
+    margin-top: 50px;
+  }
+  .about-section h3 {
+    color: var(--color-primary);
+    font-weight: 300;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+  .about-section .box-about-align {
+    display: flex;
+    justify-content: center;
+  }
+  .about-section .box-about {
+    width: 40%;
+    margin-top: 15px;
+    background-color: var(--color-primary-light);
+    border-radius: 10px;
+    padding: 35px 105px;
+    margin-bottom: 50px;
+    /* font-size: 24px; */
+  }
+  .about-section .box-about p {
+    text-align: center;
+    font-size: 22px;
+  }
+  .about-section .btn-position-0 {
+    text-align: center;
+  }
+  .artists-section-mobile {
+    display: none;
+  }
+  .artists-section {
+    display: flex;
+    padding: 0;
+    background-color: var(--color-black);
+    gap: 2rem;
+    align-items: stretch;
+    margin-top: 60px;
+  }
+
+  .artists-section aside {
+    flex: 1;
+    max-width: 50%;
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .artists-section aside h3 {
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--color-primary-light);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .artists-section aside p {
+    font-size: 22px;
+    color: var(--color-white);
+    line-height: 1.6;
+    margin-bottom: 80px;
+    text-align: justify;
+  }
+  .artists-section aside .btn-position {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .artists-section img {
+    flex: 1;
+    max-width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .circus-section {
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .circus-section h3 {
+    color: var(--color-primary);
+    font-weight: 300;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+  .circus-section .cards-circus {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 220px 220px 220px 220px;
+    gap: 20px;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .circus-section .cards-circus .card {
+    display: grid;
+    background-color: var(--color-black);
+    justify-content: center;
+    padding: 20px 5px;
+    border-radius: 10px;
+  }
+  .circus-section .cards-circus .card img {
+    border-radius: 5px;
+    height: 150px;
+  }
+  .circus-section .cards-circus aside {
+    display: grid;
+    text-align: center;
+    gap: 15px;
+  }
+  .circus-section .cards-circus .card h4 {
+    font-family: "KyivTypeSerif-Regular2", serif;
+    color: var(--color-primary);
+    margin-top: 5px;
+    font-size: 22px;
+  }
+  .circus-section .cards-circus .card span {
+    color: var(--color-primary-light);
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  .circus-section .cards-circus .card span svg {
+    padding-right: 10px;
+  }
+  footer .links a,
+  .social a {
+    font-size: 18px;
   }
 }
 

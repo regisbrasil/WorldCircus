@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Circus</title>
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="shortcut icon"
       type="imagex/png"
@@ -17,9 +18,9 @@
         <nav class="desktop-menu">
           <a href="./index.html">Home</a>
           <a href="#galery-page">Galeria</a>
-          <a href="./themes/artists.html">Artistas</a>
-          <a href="#circos-page">Circos</a>
+          <a href="./themes/artists-circus.html">Artistas & Circos</a>
           <a href="#about-page">Sobre</a>
+          <a href="./themes/login.html"> Entrar</a>
         </nav>
         <div class="header-align">
           <h1 class="name-wc">WorldCircus</h1>
@@ -27,6 +28,42 @@
             “O circo é o único lugar do mundo onde sonhar ainda é permitido.” —
             Federico Fellini, cineasta italiano apaixonado pelo circo.
           </p>
+          <!-- <div class="btn-position">
+            <a class="btn-light" href="./themes/login.html">
+              Fazer login
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_52_56"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="25"
+                  height="25"
+                >
+                  <rect
+                    y="25"
+                    width="25"
+                    height="25"
+                    transform="rotate(-90 0 25)"
+                    fill="#D9D9D9"
+                  />
+                </mask>
+                <g mask="url(#mask0_52_56)">
+                  <path
+                    d="M22.9161 12.5003L15.6244 19.792L14.1401 18.3337L18.9317 13.542H11.4578V11.4587L18.9317 11.4587L14.1661 6.66699L15.6244 5.20866L22.9161 12.5003ZM9.37443 13.542H6.24943L6.24943 11.4587H9.37443V13.542ZM4.1661 13.542H2.08276V11.4587H4.1661V13.542Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div> -->
         </div>
       </header>
       <div class="nav-menu-mobile">
@@ -68,9 +105,9 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="#galery-page">Galeria</a></li>
-          <li><a href="./themes/artists.html">Artistas</a></li>
-          <li><a href="#circos-page">Circos</a></li>
+          <li><a href="./themes/artists-circus.html">Artistas & Circos</a></li>
           <li><a href="#about-page">Sobre</a></li>
+          <li><a href="./themes/login.html">Entrar</a></li>
         </ul>
         <button class="close-menu" id="close-menu">
           <svg
@@ -91,7 +128,7 @@
         </button>
       </nav>
       <main>
-        <section class="about-section">
+        <section class="about-section" data-aos="fade-up">
           <h3>Palco aberto para artistas do impossível</h3>
           <div class="box-about-align">
             <div class="box-about">
@@ -103,7 +140,7 @@
               </p>
             </div>
           </div>
-          <div class="btn-position-r btn-position-0">
+          <div class="btn-position btn-position-0">
             <a class="btn-dark" href="#about-page">
               Saiba mais sobre nós
               <svg
@@ -150,8 +187,8 @@
             suspenso no ar — guiado pela coragem de quem transforma esforço, dor
             e paixão em espetáculo.”
           </p>
-          <div class="btn-position-r">
-            <a class="btn-light" href="./themes/artists.html">
+          <div class="btn-position">
+            <a class="btn-light" href="./themes/artists-circus.html">
               Explorar
               <svg
                 width="25"
@@ -198,8 +235,8 @@
               suspenso no ar — guiado pela coragem de quem transforma esforço,
               dor e paixão em espetáculo.”
             </p>
-            <div class="btn-position-r">
-              <a class="btn-light" href="./themes/artists.html">
+            <div class="btn-position">
+              <a class="btn-light" href="./themes/artists-circus.html">
                 Explorar
                 <svg
                   width="25"
@@ -241,7 +278,7 @@
             alt="Artistas com bambole de fogo"
           />
         </section>
-        <section class="circus-section">
+        <section class="circus-section" data-aos="fade-up">
           <h3>Conheça circos próximos de você</h3>
           <div class="cards-circus">
             <div class="card">
@@ -326,8 +363,8 @@
               </aside>
             </div>
             <div class="card">
-              <a href="#circo-sesc">
-                <img src="./assets/img/circus/sesc-circo.png" alt="" />
+              <a href="#circo-maximus">
+                <img src="./assets/img/circus/circo-maximus.jpg" alt="" />
               </a>
               <aside>
                 <h4>Sesc Circo</h4>
@@ -353,7 +390,7 @@
               </aside>
             </div>
           </div>
-          <a class="btn-dark" href="#circus-page">
+          <a class="btn-dark" href="./themes/artists-circus.html">
             Explorar mais circos
             <svg
               width="25"
@@ -507,5 +544,9 @@
       </footer>
     </div>
     <script src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
